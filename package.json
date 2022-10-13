@@ -32,5 +32,21 @@
     "eslint-config-next": "12.2.5",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8"
-  }
+  },
+  "description": "A complete e-commerce website built with Next j's, Stripe and Sanity.  Some of the features include: Fully responsive for mobile devices and Tablets Integrated Panel to upload products Side search Menu and categories included",
+  "main": "next.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyanRaymundo99/e-commerce-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RyanRaymundo99/e-commerce-website/issues"
+  },
+  "homepage": "https://github.com/RyanRaymundo99/e-commerce-website#readme"
 }
