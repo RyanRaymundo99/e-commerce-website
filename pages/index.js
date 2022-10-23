@@ -1,12 +1,13 @@
-import { FeaturedProduct, HeroBanner, LingerieBanner, Sidebar} from '../components';
+import { FeaturedProduct, Carousel, LingerieBanner, Sidebar} from '../components';
 import {client} from '../lib/client'
+import { countries } from "../lib/Data";
 
 
 function Home( { products, bannerData } ) {
   return (
       <div>
       <Sidebar/>
-      <HeroBanner heroBanner={bannerData.length && bannerData[0] }/>
+      <Carousel images={countries} />
 
       <div class="flex flex-col text-center w-full mb-20 mt-20">
         <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">MAIS VENDIDOS</h2>
