@@ -5,9 +5,80 @@ import { IconContext } from 'react-icons';
 
 const Menu = () => (
   <>
-  <p><a href='#Pricing'>Planos</a></p>
-  <p><a href='#Channels'>Vantagens</a></p>
-  <p><a href='#freetrial'>Teste</a></p>
+  <p>
+    <div class="group inline-block">
+      <button class="outline-none py-1 flex items-center">
+        <span class="font-semibold flex-1">Feminino</span>
+        <span>
+          <svg
+            class="fill-current h-4 w-4 transform group-hover:-rotate-180
+            transition duration-150 ease-in-out"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20">
+            <path
+              d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+            />
+          </svg>
+        </span>
+      </button>
+      <ul class="bg-gradient-to-r from-blue-600/70 to-purple-500/90 backdrop-blur-[10px] border-l-4 border-purple-500 transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top min-w-32">
+        <li class="rounded-sm px-3 py-1 hover:bg-purple-500/80">Lingeries</li>
+        <li class="rounded-sm px-3 py-1 hover:bg-purple-500/80">Shorts</li>
+        <li class="rounded-sm px-3 py-1 hover:bg-purple-500/80">Anime</li>
+        <li class="rounded-sm px-3 py-1 hover:bg-purple-500/80">Tops</li>
+      </ul>
+    </div>
+  </p>
+
+  <p>
+    <div class="group inline-block">
+        <button class="outline-none py-1 flex items-center">
+          <span class="pr-1 font-semibold flex-1">Masculino</span>
+          <span>
+            <svg
+              class="fill-current h-4 w-4 transform group-hover:-rotate-180
+              transition duration-150 ease-in-out"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20">
+              <path
+                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+              />
+            </svg>
+          </span>
+        </button>
+        <ul class="bg-gradient-to-r from-blue-600/70 to-purple-500/90 backdrop-blur-[10px] border-l-4 border-purple-500 transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top min-w-32">
+          <li class="rounded-sm px-3 py-1 hover:bg-purple-500/80">Lingeries</li>
+          <li class="rounded-sm px-3 py-1 hover:bg-purple-500/80">Shorts</li>
+          <li class="rounded-sm px-3 py-1 hover:bg-purple-500/80">Anime</li>
+          <li class="rounded-sm px-3 py-1 hover:bg-purple-500/80">Tops</li>
+        </ul>
+      </div>  
+    </p>
+
+  <p>
+    <div class="group inline-block">
+        <button class="outline-none py-1 flex items-center ">
+          <span class="pr-1 font-semibold flex-1">Outros</span>
+          <span>
+            <svg
+              class="fill-current h-4 w-4 transform group-hover:-rotate-180
+              transition duration-150 ease-in-out"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20">
+              <path
+                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+              />
+            </svg>
+          </span>
+        </button>
+        <ul class="bg-gradient-to-r from-blue-600/70 to-purple-500/90 backdrop-blur-[10px] border-l-4 border-purple-500 transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top min-w-32">
+          <li class="rounded-sm px-3 py-1 hover:bg-purple-500/80">Lingeries</li>
+          <li class="rounded-sm px-3 py-1 hover:bg-purple-500/80">Shorts</li>
+          <li class="rounded-sm px-3 py-1 hover:bg-purple-500/80">Anime</li>
+          <li class="rounded-sm px-3 py-1 hover:bg-purple-500/80">Tops</li>
+        </ul>
+      </div>
+  </p>
   </>
 )
 

@@ -50,10 +50,6 @@ a {
   text-decoration: none;
 }
 
-.cine-club__navbar-links a:hover {
-  color: var(--color-button);
-}  
-
 .cine-club__navbar-links_logo {
   margin-right: 10rem;
   margin-top: 0.1rem;
@@ -100,10 +96,6 @@ a {
 
   margin: 0 1rem;
   cursor: pointer;
-}
-
-.cine-club__navbar-links_container p:hover {
-  color: rgb(220, 215, 215);
 }
 
 .cine-club__navbar-menu_container button {
@@ -163,6 +155,9 @@ a {
 }
 
 @media screen and (max-width: 1050px) {
+  .cine-club__navbar-links_container {
+      display: none;
+  }
 
   .cine-club__navbar-links_logo {
       margin-right: 10rem;
@@ -181,11 +176,18 @@ a {
   .cine-club__navbar {
       padding: 1rem 2rem;
   }
-
+  .download_button {
+      display: none;
+  }
+}
 
 @media screen and (max-width: 550px) {
   .cine-club__navbar {
       padding: 0 1rem;
+  }
+
+  .download_button {
+      display: none;
   }
 
   .cine-club__navbar-menu_container {
@@ -196,7 +198,6 @@ a {
       font-size: 15px;
   }
 }
- }
 
 
 
@@ -1034,60 +1035,12 @@ span {
 
 
 
-.slider {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image {
-  width: 1000px;
-  height: 600px;
-  border-radius: 10px;
-}
-
-.right-arrow {
-  position: absolute;
-  top: 50%;
-  right: 32px;
-  font-size: 3rem;
-  color: #000;
-  z-index: 10;
-  cursor: pointer;
-  user-select: none;
-}
-
-.left-arrow {
-  position: absolute;
-  top: 50%;
-  left: 32px;
-  font-size: 3rem;
-  color: #000;
-  z-index: 10;
-  cursor: pointer;
-  user-select: none;
-}
-
-.slide {
-  opacity: 0;
-  transition-duration: 1s ease;
-}
-
-.slide.active {
-  opacity: 1;
-  transition-duration: 1s;
-  transform: scale(1.08);
-}
-
-
 
 .carousel {
   display: flex;
-  height: 400px;
+  margin: auto;
+  height: 660px;
   width: 100%;
-  max-width: 800px;
 }
 
 .carousel_wrapper {
@@ -1103,9 +1056,8 @@ span {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  border-radius: 20px;
   -webkit-box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.1);
   opacity: 0;
   pointer-events: none;
   transform: scale(0.8);
@@ -1127,7 +1079,7 @@ span {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
   display: flex;
   padding: 40px 30px;
   align-items: flex-end;
@@ -1186,4 +1138,19 @@ span {
 
 .pagination_dot-active {
   background-color: steelblue;
+}
+
+@media screen and (max-width: 850px) {
+  .card_image {
+    object-fit: fill;
+  }
+
+  .carousel {
+    height: 360px;
+    width: 100%;
+  }
+
+  .card_title {
+    display: none;
+  }
 }
